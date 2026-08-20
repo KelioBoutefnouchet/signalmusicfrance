@@ -1,0 +1,169 @@
+[
+  {
+    "id": "kelio-iii",
+    "image": "assets/archive/IMG_0343.jpeg",
+    "type": "Single",
+    "artiste": "Kelio",
+    "titre": "III",
+    "comportement": "lightbox",
+    "span": 2
+  },
+  {
+    "id": "die-and-retry",
+    "image": "assets/archive/316x316bb-1---Grande.png",
+    "type": "Single",
+    "artiste": "Die and Retry",
+    "titre": "Kickstart",
+    "comportement": "lightbox"
+  },
+  {
+    "id": "quatr3quatre",
+    "image": "assets/archive/Capture-decran-2026-01-30-a-21.02.12.png",
+    "type": "Movie",
+    "artiste": "Kelio",
+    "titre": "quatr3quatre",
+    "comportement": "lightbox"
+  },
+  {
+    "id": "luxie-release",
+    "image": "assets/archive/LUXIE_01.png",
+    "type": "Released",
+    "artiste": "LUXIE",
+    "date": "Janvier 2026",
+    "comportement": "lightbox",
+    "span": 2
+  },
+  {
+    "id": "gin-release",
+    "image": "assets/archive/GIN_COUV_POST_01.png",
+    "type": "Released",
+    "artiste": "GIN",
+    "date": "Novembre 2025",
+    "comportement": "lightbox"
+  },
+  {
+    "id": "kelio-mag",
+    "image": "assets/archive/SCAN_MAG_GIN_FACE.png",
+    "type": "Signal Magazine: Creator",
+    "artiste": "Kelio",
+    "prix": "10€",
+    "comportement": "lightbox"
+  },
+  {
+    "id": "luxie-poster",
+    "image": "assets/archive/LUXIE_POSTER_HSARD_LUDIQUE2.png",
+    "type": "Affiche",
+    "titre": "Lancement de Single",
+    "credit": "Signal / Luxie",
+    "comportement": "lightbox"
+  },
+  {
+    "id": "kickstart-poster",
+    "image": "assets/archive/KICKSTART_POSTER.png",
+    "type": "Affiche",
+    "titre": "Kickstart — 1er single",
+    "credit": "Die and Retry",
+    "comportement": "lightbox"
+  },
+  {
+    "id": "marius",
+    "image": "assets/archive/MARIUS_COUV.png",
+    "type": "Signal Magazine: Creator",
+    "artiste": "Marius",
+    "date": "Septembre 2025",
+    "comportement": "lightbox"
+  },
+  {
+    "id": "simon",
+    "image": "assets/archive/SIMON_COUV.png",
+    "type": "Signal Magazine: Creator",
+    "artiste": "Simon",
+    "date": "Septembre 2025",
+    "comportement": "lightbox"
+  },
+  {
+    "id": "gin-mag",
+    "image": "assets/archive/750_1017.jpg",
+    "type": "Signal Magazine: Artist",
+    "artiste": "Gin",
+    "date": "Novembre 2025",
+    "comportement": "lightbox"
+  },
+  {
+    "id": "gin-mag-2",
+    "image": "assets/archive/750_1257.jpg",
+    "type": "Archive",
+    "artiste": "Gin",
+    "comportement": "lightbox"
+  },
+  {
+    "id": "dijon",
+    "image": "assets/archive/IG_SIGNAL_POST_DIJON_03.png",
+    "type": "Affiche",
+    "titre": "Signal Dijon",
+    "comportement": "lightbox"
+  },
+  {
+    "id": "aerovoyage",
+    "image": "assets/archive/cover_aerovoyage20142.png",
+    "type": "Album",
+    "artiste": "Aerovoyage",
+    "comportement": "lightbox"
+  },
+  {
+    "id": "riri",
+    "image": "assets/archive/cover-riri.png",
+    "type": "Album",
+    "artiste": "Riri",
+    "comportement": "lightbox"
+  },
+  {
+    "id": "kelio-cover",
+    "image": "assets/archive/coverIIIkelio.jpeg",
+    "type": "Single",
+    "artiste": "Kelio",
+    "titre": "III",
+    "comportement": "lightbox"
+  },
+  {
+    "id": "gin-mini",
+    "image": "assets/archive/minia-gin.png",
+    "type": "Vidéo",
+    "artiste": "GIN",
+    "comportement": "lightbox"
+  },
+  {
+    "id": "stickers",
+    "image": "assets/archive/STICKERS_50X80_LOFOOPLUSFAT2.png",
+    "type": "Objet",
+    "titre": "Stickers",
+    "comportement": "lightbox"
+  },
+  {
+    "id": "kickstart-square",
+    "image": "assets/archive/KICKSTART_DAR_POST_01.png",
+    "type": "Single",
+    "artiste": "Die and Retry",
+    "titre": "Kickstart",
+    "comportement": "lightbox"
+  },
+  {
+    "id": "luxie-extra",
+    "image": "assets/archive/Capture-decran-2026-01-30-a-21.09.12.png",
+    "type": "Archive",
+    "artiste": "Luxie",
+    "comportement": "lightbox"
+  },
+  {
+    "id": "capture-decran-2026-08-16-a-23-32-24",
+    "image": "assets/archive/Capture d’écran 2026-08-16 à 23.32.24.png",
+    "type": "artwork",
+    "artiste": "kelio btf",
+    "titre": "no eat no chicken",
+    "date": "18 avril",
+    "credit": "kelio",
+    "url": "www.instagram.com/keliwhoo",
+    "comportement": "external",
+    "span": 1
+  }
+]
