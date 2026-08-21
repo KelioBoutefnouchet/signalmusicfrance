@@ -377,15 +377,20 @@ a {
 /* =========================
    Filters
    ========================= */
-.archive-tools {
+.filter-tools {
+  position: relative;
   display: flex;
   align-items: center;
   min-height: 18px;
-  padding: 0 var(--page-padding);
+  padding: 0;
   margin: 0;
 }
 
-.archive-filter-toggle {
+.archive-tools {
+  margin-inline: var(--page-padding);
+}
+
+.filter-toggle {
   display: inline-flex;
   align-items: center;
   gap: 4px;
@@ -393,8 +398,8 @@ a {
   height: auto;
   margin: 0;
   padding: 2px 5px;
-  border: 0;
-  background: none;
+  border: 1px solid var(--line);
+  background: #000;
   color: var(--muted);
   font: inherit;
   font-size: var(--font-meta);
@@ -404,7 +409,7 @@ a {
   vertical-align: middle;
 }
 
-.archive-filter-toggle svg {
+.filter-toggle svg {
   display: block;
   width: 9px;
   height: 9px;
@@ -415,23 +420,24 @@ a {
   stroke-linejoin: miter;
 }
 
-.archive-filter-toggle span {
+.filter-toggle span {
   display: block;
 }
 
-.archive-filter-toggle:hover,
-.archive-filter-toggle:focus-visible,
-.archive-filter-toggle[aria-expanded="true"] {
+.filter-toggle:hover,
+.filter-toggle:focus-visible,
+.filter-toggle[aria-expanded="true"] {
   color: var(--white);
   opacity: 1;
 }
 
-.archive-filters {
-  position: fixed;
+.filter-panel {
+  position: absolute;
   z-index: 25;
-  top: 70px;
-  left: var(--page-padding);
+  top: 100%;
+  left: 0;
   width: min(270px, calc(100vw - 40px));
+  margin-top: 6px;
   padding: 9px 10px 10px;
   border: 1px solid var(--line);
   background: #000;
@@ -445,21 +451,22 @@ a {
   display: none;
 }
 
-.archive-filters label {
+.filter-panel label {
   display: grid;
   grid-template-columns: 64px 1fr;
   align-items: center;
   margin-bottom: 6px;
 }
 
-.archive-filters label:last-child {
+.filter-panel label:last-child {
   margin-bottom: 0;
 }
 
-.archive-filters select,
-.archive-filters input {
+.filter-panel select,
+.filter-panel input {
   width: 100%;
   min-width: 0;
+  min-height: 22px;
   padding: 2px 4px;
   border: 1px solid var(--line);
   border-radius: 0;
@@ -574,91 +581,11 @@ a {
   margin: 0 0 8px;
 }
 
-.shop-filter-toggle {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  width: auto;
-  height: auto;
-  margin: 0;
-  padding: 2px 5px;
-  border: 1px solid var(--line);
-  background: #000;
-  color: var(--muted);
-  font: inherit;
-  font-size: var(--font-meta);
-  line-height: 1;
-  opacity: 0.65;
-  cursor: pointer;
-  vertical-align: middle;
-}
-
-.shop-filter-toggle svg {
-  display: block;
-  width: 9px;
-  height: 9px;
-  overflow: visible;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 0.8;
-  stroke-linejoin: miter;
-}
-
-.shop-filter-toggle span {
-  display: block;
-}
-
-.shop-filter-toggle:hover,
-.shop-filter-toggle:focus-visible,
-.shop-filter-toggle[aria-expanded="true"] {
-  color: var(--white);
-  opacity: 1;
-}
-
-.shop-filters {
-  position: static;
-  z-index: auto;
-  top: auto;
-  left: auto;
-  width: min(270px, 100%);
-  margin: 0 0 8px;
-  padding: 9px 10px 10px;
-  border: 1px solid var(--line);
-  background: #000;
-  font-size: var(--font-meta);
-  line-height: 1.2;
-}
-
-.shop-filters[hidden],
+.filter-panel[hidden],
 .shop-filter-status[hidden],
 .shop-item[hidden],
 .shop-empty[hidden] {
   display: none;
-}
-
-.shop-filters label {
-  display: grid;
-  grid-template-columns: 64px 1fr;
-  align-items: center;
-  margin-bottom: 6px;
-}
-
-.shop-filters label:last-child {
-  margin-bottom: 0;
-}
-
-.shop-filters select,
-.shop-filters input {
-  width: 100%;
-  min-width: 0;
-  min-height: 22px;
-  padding: 2px 4px;
-  border: 1px solid var(--line);
-  border-radius: 0;
-  background: #000;
-  color: var(--white);
-  font: inherit;
-  line-height: 1.2;
 }
 
 .shop-filter-status {
@@ -981,22 +908,16 @@ a {
 
   .archive-tools,
   .shop-tools {
-    margin: 0;
+    margin-inline: var(--page-padding);
   }
 
-  .archive-filters,
-  .shop-filters {
-    top: 68px;
-    left: var(--page-padding);
+  .shop-tools {
+    margin-inline: 0;
+  }
+
+  .filter-panel {
     width: min(270px, calc(100vw - 24px));
     font-size: 10px;
-  }
-
-  .shop-filters {
-    position: static;
-    top: auto;
-    left: auto;
-    width: min(270px, 100%);
   }
 
   .archive-filter-status,

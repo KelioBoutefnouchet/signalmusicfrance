@@ -1,69 +1,108 @@
 [
   {
-    "id": "kelio-iii",
+    "id": "photo-mag-gin",
     "image": "assets/archive/IMG_0343.jpeg",
-    "type": "Single",
-    "artiste": "Kelio",
-    "titre": "III",
-    "comportement": "lightbox",
-    "span": 2
+    "type": "Archive",
+    "artiste": "GIN",
+    "titre": "Concert à Châtelet",
+    "date": "20 novembre 2026",
+    "credit": "@anewfoe",
+    "media": "",
+    "url": "https://www.youtube.com/watch?v=GLk2aYkWJl8",
+    "comportement": "external",
+    "span": 1
   },
   {
-    "id": "die-and-retry",
+    "id": "gin-cover",
     "image": "assets/archive/316x316bb-1---Grande.png",
     "type": "Single",
-    "artiste": "Die and Retry",
-    "titre": "Kickstart",
-    "comportement": "lightbox"
+    "artiste": "GIN",
+    "titre": "CAVIAR NORMAL SUPERIEUR",
+    "date": "14 novembre 2026",
+    "credit": "@kishin.dissolved et @buissonstudio",
+    "media": "",
+    "url": "",
+    "comportement": "lightbox",
+    "span": 1
   },
   {
     "id": "quatr3quatre",
     "image": "assets/archive/Capture-decran-2026-01-30-a-21.02.12.png",
-    "type": "Movie",
+    "type": "Clip",
     "artiste": "Kelio",
     "titre": "quatr3quatre",
-    "comportement": "lightbox"
+    "date": "30 janvier 2026",
+    "credit": "kelio moussa boutefnouchet",
+    "media": "",
+    "url": "https://youtu.be/ZSTt10niAu0?si=Qvh-m2N2jSSvmv_p",
+    "comportement": "external",
+    "span": 2
   },
   {
     "id": "luxie-release",
     "image": "assets/archive/LUXIE_01.png",
-    "type": "Released",
+    "type": "Release",
     "artiste": "LUXIE",
+    "titre": "",
     "date": "Janvier 2026",
+    "credit": "@anewfoe et Signal",
+    "media": "",
+    "url": "",
     "comportement": "lightbox",
-    "span": 2
+    "span": 1
   },
   {
     "id": "gin-release",
     "image": "assets/archive/GIN_COUV_POST_01.png",
-    "type": "Released",
+    "type": "Release",
     "artiste": "GIN",
+    "titre": "",
     "date": "Novembre 2025",
-    "comportement": "lightbox"
+    "credit": "@anewfoe et Signal",
+    "media": "",
+    "url": "",
+    "comportement": "lightbox",
+    "span": 1
   },
   {
     "id": "kelio-mag",
     "image": "assets/archive/SCAN_MAG_GIN_FACE.png",
-    "type": "Signal Magazine: Creator",
-    "artiste": "Kelio",
+    "type": "Signal Magazine: Artist",
+    "artiste": "GIN",
+    "titre": "",
+    "date": "Novembre 2026",
+    "credit": "Signal / GIN",
+    "media": "",
+    "url": "",
     "prix": "10€",
-    "comportement": "lightbox"
+    "comportement": "lightbox",
+    "span": 1
   },
   {
     "id": "luxie-poster",
     "image": "assets/archive/LUXIE_POSTER_HSARD_LUDIQUE2.png",
     "type": "Affiche",
-    "titre": "Lancement de Single",
-    "credit": "Signal / Luxie",
-    "comportement": "lightbox"
+    "artiste": "",
+    "titre": "Affiche LUXIE — HASARD LUDIQUE",
+    "credit": "Signal / LUXIE",
+    "date": "17 Janvier 2026",
+    "media": "",
+    "url": "",
+    "comportement": "lightbox",
+    "span": 1
   },
   {
     "id": "kickstart-poster",
     "image": "assets/archive/KICKSTART_POSTER.png",
     "type": "Affiche",
+    "artiste": "Die and Retry",
     "titre": "Kickstart — 1er single",
-    "credit": "Die and Retry",
-    "comportement": "lightbox"
+    "credit": "Simon / Signal",
+    "date": "9 janvier 2026",
+    "media": "",
+    "url": "https://open.spotify.com/intl-fr/track/7k5xvUG5rZNLBvOB7lwCqP?si=098651ae754c4834",
+    "comportement": "lightbox",
+    "span": 1
   },
   {
     "id": "marius",
@@ -71,7 +110,12 @@
     "type": "Signal Magazine: Creator",
     "artiste": "Marius",
     "date": "Septembre 2025",
-    "comportement": "lightbox"
+    "titre": "",
+    "credit": "",
+    "media": "",
+    "url": "",
+    "comportement": "lightbox",
+    "span": 1
   },
   {
     "id": "simon",
@@ -79,43 +123,77 @@
     "type": "Signal Magazine: Creator",
     "artiste": "Simon",
     "date": "Septembre 2025",
-    "comportement": "lightbox"
+    "titre": "",
+    "credit": "",
+    "media": "",
+    "url": "",
+    "comportement": "lightbox",
+    "span": 1
   },
   {
-    "id": "gin-mag",
+    "id": "keliophotoPF",
     "image": "assets/archive/750_1017.jpg",
-    "type": "Signal Magazine: Artist",
-    "artiste": "Gin",
-    "date": "Novembre 2025",
-    "comportement": "lightbox"
+    "type": "Archive",
+    "artiste": "Kelio",
+    "date": "16 mars 2025",
+    "titre": "Tracklist du concert au point éphémère",
+    "credit": "@anewfoe",
+    "media": "",
+    "url": "",
+    "comportement": "lightbox",
+    "span": 1
   },
   {
     "id": "gin-mag-2",
     "image": "assets/archive/750_1257.jpg",
     "type": "Archive",
-    "artiste": "Gin",
-    "comportement": "lightbox"
+    "artiste": "Kelio",
+    "titre": "Concert Point Éphémère",
+    "date": "16 mars 2026",
+    "credit": "@anewfoe",
+    "media": "",
+    "url": "",
+    "comportement": "lightbox",
+    "span": 1
   },
   {
     "id": "dijon",
     "image": "assets/archive/IG_SIGNAL_POST_DIJON_03.png",
     "type": "Affiche",
-    "titre": "Signal Dijon",
-    "comportement": "lightbox"
+    "artiste": "",
+    "titre": "SIGNAL TOUR - DIJON",
+    "date": "Septembre 2025",
+    "credit": "Simon / Signal",
+    "media": "",
+    "url": "",
+    "comportement": "lightbox",
+    "span": 1
   },
   {
     "id": "aerovoyage",
     "image": "assets/archive/cover_aerovoyage20142.png",
-    "type": "Album",
-    "artiste": "Aerovoyage",
-    "comportement": "lightbox"
+    "type": "Single",
+    "artiste": "Kelio",
+    "titre": "aerovoyage2013",
+    "date": "30 mars 2026",
+    "credit": "kelio moussa boutefnouchet",
+    "media": "",
+    "url": "https://open.spotify.com/intl-fr/album/3GfCJIyr3Xzc94gNDoRLZ1?si=QnIZ1qjZTuuarnek6w2-3Q",
+    "comportement": "external",
+    "span": 1
   },
   {
     "id": "riri",
     "image": "assets/archive/cover-riri.png",
-    "type": "Album",
-    "artiste": "Riri",
-    "comportement": "lightbox"
+    "type": "Single",
+    "artiste": "Die and Retry",
+    "titre": "Riri",
+    "date": "3 avril 2026",
+    "credit": "Simon / Signal",
+    "media": "",
+    "url": "https://open.spotify.com/intl-fr/album/24sBFz20kb9zUYkghZh36D?si=tjLrH8KUTaG15ThvREUKZQ",
+    "comportement": "external",
+    "span": 1
   },
   {
     "id": "kelio-cover",
@@ -123,21 +201,38 @@
     "type": "Single",
     "artiste": "Kelio",
     "titre": "III",
-    "comportement": "lightbox"
+    "date": "30 janvier 2026",
+    "credit": "kelio moussa boutefnouchet",
+    "media": "https://open.spotify.com/intl-fr/album/4BWAaM5NasvBaivFcnp1Wc?si=8IoZrHo9RDyPYAK5uVKKbQ",
+    "url": "",
+    "comportement": "external",
+    "span": 2
   },
   {
     "id": "gin-mini",
     "image": "assets/archive/minia-gin.png",
-    "type": "Vidéo",
+    "type": "Documentaire",
     "artiste": "GIN",
-    "comportement": "lightbox"
+    "titre": "GIN - SIGNAL MAG 01 - LE DOCUMENTAIRE",
+    "date": "24 mars 2026",
+    "credit": "Simon / Signal",
+    "media": "",
+    "url": "https://youtu.be/mYP9teeCR7M?si=CBk_OQC1aaJhC_sI",
+    "comportement": "external",
+    "span": 2
   },
   {
     "id": "stickers",
     "image": "assets/archive/STICKERS_50X80_LOFOOPLUSFAT2.png",
-    "type": "Objet",
-    "titre": "Stickers",
-    "comportement": "lightbox"
+    "type": "Archive",
+    "artiste": "",
+    "titre": "Sticker 01",
+    "date": "2025",
+    "credit": "Simon / Signal",
+    "media": "",
+    "url": "",
+    "comportement": "lightbox",
+    "span": 1
   },
   {
     "id": "kickstart-square",
@@ -145,25 +240,24 @@
     "type": "Single",
     "artiste": "Die and Retry",
     "titre": "Kickstart",
-    "comportement": "lightbox"
+    "date": "",
+    "credit": "",
+    "media": "",
+    "url": "",
+    "comportement": "lightbox",
+    "span": 1
   },
   {
-    "id": "luxie-extra",
+    "id": "kelio-mag",
     "image": "assets/archive/Capture-decran-2026-01-30-a-21.09.12.png",
-    "type": "Archive",
-    "artiste": "Luxie",
-    "comportement": "lightbox"
-  },
-  {
-    "id": "capture-decran-2026-08-16-a-23-32-24",
-    "image": "assets/archive/Capture d’écran 2026-08-16 à 23.32.24.png",
-    "type": "artwork",
-    "artiste": "kelio btf",
-    "titre": "no eat no chicken",
-    "date": "18 avril",
-    "credit": "kelio",
-    "url": "www.instagram.com/keliwhoo",
-    "comportement": "external",
+    "type": "Signal Magazine: Creator",
+    "artiste": "Kelio",
+    "titre": "",
+    "date": "Septembre 2025",
+    "credit": "",
+    "media": "",
+    "url": "",
+    "comportement": "lightbox",
     "span": 1
   }
 ]

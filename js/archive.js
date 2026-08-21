@@ -36,8 +36,8 @@
     [
       item.type && `<span class="meta-type">${item.type}</span>`,
       item.artiste && `<span class="meta-artist">${item.artiste}</span>`,
-      item.titre && `<cite class="meta-title">${item.titre}</cite>`,
-      item.date && `<time class="meta-date">${item.date}</time>`,
+      item.titre && `<span class="meta-title">${item.titre}</span>`,
+      item.date && `<span class="meta-date">${item.date}</span>`,
       item.duree && `<span class="meta-duration">${item.duree}</span>`,
       item.prix && `<span class="meta-price">${item.prix}</span>`,
       item.credit && `<span class="meta-credit">Crédit : ${item.credit}</span>`,
@@ -104,10 +104,10 @@
     const years = [...new Set(entries.map(yearOf).filter(Boolean))].sort((a, b) => b - a);
 
     const archiveTools = document.createElement('div');
-    archiveTools.className = 'archive-tools';
+    archiveTools.className = 'filter-tools archive-tools';
     archiveTools.innerHTML = `
       <button
-        class="archive-filter-toggle"
+        class="filter-toggle archive-filter-toggle"
         type="button"
         aria-label="Filtrer l’archive"
         aria-controls="archive-filters"
@@ -122,10 +122,10 @@
 
     grid.parentNode.insertBefore(archiveTools, grid);
 
-    document.body.insertAdjacentHTML(
+    archiveTools.insertAdjacentHTML(
       'beforeend',
       `
-        <section class="archive-filters" id="archive-filters" aria-label="Filtres de l’archive" hidden>
+        <section class="filter-panel archive-filters" id="archive-filters" aria-label="Filtres de l’archive" hidden>
           <label>
             Type
             <select name="type">
@@ -164,6 +164,9 @@
       panel.hidden = true;
       toggle.setAttribute('aria-expanded', 'false');
     };
+
+    const isInsideFilter = (target) =>
+      target instanceof Node && (panel.contains(target) || toggle.contains(target));
 
     const renderStatus = (count) => {
       const active = Object.entries(state).filter(([, value]) => value);
@@ -236,9 +239,7 @@
     });
 
     document.addEventListener('pointerdown', (event) => {
-      if (!panel.hidden && !panel.contains(event.target) && !toggle.contains(event.target)) {
-        closeFilters();
-      }
+      if (!panel.hidden && !isInsideFilter(event.target)) closeFilters();
     });
 
     document.addEventListener('keydown', (event) => {

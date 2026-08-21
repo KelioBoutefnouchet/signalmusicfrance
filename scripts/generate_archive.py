@@ -52,6 +52,7 @@ def main() -> None:
             "titre": "",
             "date": "",
             "credit": "",
+            "media": "",
             "url": "",
             "comportement": "lightbox",
             "span": 1,
