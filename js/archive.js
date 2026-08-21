@@ -29,6 +29,22 @@
   const yearOf = (item) =>
     (String(item.date || '').match(/\b(?:19|20)\d{2}\b/) || [])[0] || '';
 
+  const formatDate = (value) => {
+    if (!value) return '';
+    if (/^\d{4}$/.test(value)) return value;
+
+    const monthOnly = /^\d{4}-\d{2}$/.test(value);
+    const date = new Date(`${monthOnly ? `${value}-01` : value}T00:00:00Z`);
+    if (Number.isNaN(date.getTime())) return value;
+
+    return new Intl.DateTimeFormat('fr-FR', {
+      ...(monthOnly ? {} : { day: 'numeric' }),
+      month: 'numeric',
+      year: 'numeric',
+      timeZone: 'UTC',
+    }).format(date);
+  };
+
   const externalUrl = (url) =>
     /^https?:\/\//i.test(url) ? url : `https://${url}`;
 
@@ -37,7 +53,7 @@
       item.type && `<span class="meta-type">${item.type}</span>`,
       item.artiste && `<span class="meta-artist">${item.artiste}</span>`,
       item.titre && `<span class="meta-title">${item.titre}</span>`,
-      item.date && `<span class="meta-date">${item.date}</span>`,
+      item.date && `<span class="meta-date">${formatDate(item.date)}</span>`,
       item.duree && `<span class="meta-duration">${item.duree}</span>`,
       item.prix && `<span class="meta-price">${item.prix}</span>`,
       item.credit && `<span class="meta-credit">Crédit : ${item.credit}</span>`,
@@ -46,9 +62,8 @@
       .join('');
 
   const columnsForWidth = (width) => {
-    if (width < 360) return 2;
-    if (width < 768) return 3;
-    if (width < 1024) return 5;
+    if (width < 768) return 2;
+    if (width < 1100) return 3;
     if (width < 1280) return 6;
     return 8;
   };
@@ -64,7 +79,7 @@
     const width = grid.clientWidth;
     const columns = columnsForWidth(innerWidth);
     const gap = innerWidth < 768 ? 6 : 8;
-    const rowGap = innerWidth < 768 ? 44 : 56;
+    const rowGap = innerWidth < 768 ? 36 : 56;
     const columnWidth = (width - gap * (columns - 1)) / columns;
     const heights = Array(columns).fill(0);
 
@@ -95,12 +110,12 @@
   };
 
   const createFilters = () => {
-    const types = [...new Set(entries.map((item) => item.type).filter(Boolean))].sort((a, b) =>
-      a.localeCompare(b, 'fr')
-    );
-    const artists = [...new Set(entries.map((item) => item.artiste).filter(Boolean))].sort((a, b) =>
-      a.localeCompare(b, 'fr')
-    );
+    const uniqueByLabel = (items) =>
+      [...new Map(items.filter(Boolean).map((value) => [normalise(value), value])).values()].sort((a, b) =>
+        a.localeCompare(b, 'fr')
+      );
+    const types = uniqueByLabel(entries.map((item) => item.type));
+    const artists = uniqueByLabel(entries.map((item) => item.artiste));
     const years = [...new Set(entries.map(yearOf).filter(Boolean))].sort((a, b) => b - a);
 
     const archiveTools = document.createElement('div');
@@ -193,8 +208,8 @@
             .join(' ')
         );
         const visible =
-          (!state.type || item.type === state.type) &&
-          (!state.artiste || item.artiste === state.artiste) &&
+          (!state.type || normalise(item.type) === normalise(state.type)) &&
+          (!state.artiste || normalise(item.artiste) === normalise(state.artiste)) &&
           (!state.annee || yearOf(item) === state.annee) &&
           (!state.recherche || haystack.includes(normalise(state.recherche)));
 
